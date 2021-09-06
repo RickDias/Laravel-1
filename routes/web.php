@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::view('/login', 'front-store.login')->name('front-store.login');
+
+Route::get('/home', 'App\Http\Controllers\LoginController@index')->name('front-store.home');
